@@ -9,8 +9,6 @@ L’applicativo mantiene separati i dati del prodotto dal motore di calcolo MRP:
 JSON gli articoli, la distinta base, le giacenze e i parametri di pianificazione, quindi esegue 
 i calcoli e visualizza i risultati. È quindi possibile analizzare prodotti diversi senza modificare
 il codice, purché i file JSON rispettino la struttura prevista.
-Il software opera come strumento autonomo di simulazione e pianificazione: non è collegato a macchinari,
-magazzini o sistemi gestionali e non acquisisce dati in tempo reale.
 
 
 ## Gestione dei dati
