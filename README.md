@@ -2,6 +2,8 @@
 
 Applicazione Python per la **pianificazione dei fabbisogni di materiali (MRP)** su distinta base multilivello, con dashboard **Streamlit**, tabelle **pandas** e grafici interattivi **Plotly**.
 
+## Gestione dei dati
+
 Il progetto carica di default un esempio basato su una centralina BLE/Wi-Fi ESP32 con scheda relè.
 Per testare l’applicativo con un prodotto diverso, è possibile utilizzare il pulsante Upload e 
 caricare il file JSON alternativo (progetto bicicletta) incluso nella cartella data.
@@ -10,14 +12,6 @@ JSON gli articoli, la distinta base, le giacenze e i parametri di pianificazione
 i calcoli e visualizza i risultati. È quindi possibile analizzare prodotti diversi senza modificare
 il codice, purché i file JSON rispettino la struttura prevista.
 
-
-## Gestione dei dati
-
-I dati del progetto sono memorizzati nel file `data/progetto_centralina.json`, separatamente dal codice di calcolo.
-
-Il file non contiene matricola, nome, cognome o la sezione `parametri_personali`. I valori ricavati dalle formule universitarie sono già inseriti come normali dati numerici, come avverrebbe in un archivio aziendale.
-
-Il motore MRP non legge dati personali e permette di caricare **altre distinte base nello stesso formato JSON**, senza modificare il codice.
 
 ## Installazione e avvio su Windows
 
