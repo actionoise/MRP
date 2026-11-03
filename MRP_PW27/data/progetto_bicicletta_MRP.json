@@ -1,0 +1,552 @@
+{
+  "nome_progetto": "Bicicletta urbana — esempio JSON per MRP",
+  "descrizione": "Esempio didattico indipendente dalla centralina BLE, con struttura BOM a tre livelli, parti comuni alle ruote e dati ipotetici.",
+  "prodotto_finito": "FIN_BICI",
+  "orizzonte_settimane": 8,
+  "periodo_poq": 3,
+  "fabbisogni": [
+    8,
+    12,
+    15,
+    10,
+    18,
+    15,
+    12,
+    10
+  ],
+  "articoli": [
+    {
+      "codice": "FIN_BICI",
+      "descrizione": "Bicicletta urbana completa a velocità singola",
+      "provenienza": "PRODOTTO",
+      "lead_time": 2,
+      "giacenza_iniziale": 30,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "FOQ",
+      "lotto_foq": 25,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "ASS_STRUTTURA",
+      "descrizione": "Gruppo telaio e postazione di guida assemblati",
+      "provenienza": "PRODOTTO",
+      "lead_time": 1,
+      "giacenza_iniziale": 3,
+      "scorta_sicurezza": 0,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "ASS_RUOTA_A",
+      "descrizione": "Ruota anteriore 700C assemblata",
+      "provenienza": "PRODOTTO",
+      "lead_time": 1,
+      "giacenza_iniziale": 4,
+      "scorta_sicurezza": 0,
+      "regola_lotto": "POQ",
+      "lotto_foq": null,
+      "periodo_poq": 2,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "ASS_RUOTA_P",
+      "descrizione": "Ruota posteriore 700C assemblata",
+      "provenienza": "PRODOTTO",
+      "lead_time": 1,
+      "giacenza_iniziale": 4,
+      "scorta_sicurezza": 0,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "ASS_TRASM",
+      "descrizione": "Gruppo trasmissione a singola velocità assemblato",
+      "provenienza": "PRODOTTO",
+      "lead_time": 1,
+      "giacenza_iniziale": 2,
+      "scorta_sicurezza": 0,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "ASS_FRENI",
+      "descrizione": "Impianto freni V-brake assemblato",
+      "provenienza": "PRODOTTO",
+      "lead_time": 1,
+      "giacenza_iniziale": 2,
+      "scorta_sicurezza": 0,
+      "regola_lotto": "POQ",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "TELAIO",
+      "descrizione": "Telaio bici urbana",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 3,
+      "giacenza_iniziale": 15,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "FOQ",
+      "lotto_foq": 20,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "FORCELLA",
+      "descrizione": "Forcella rigida bici 700C",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 12,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "MANUBRIO",
+      "descrizione": "Manubrio per bicicletta urbana",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 14,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "POQ",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "ATT_MANUBRIO",
+      "descrizione": "Attacco manubrio",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 10,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "SELLA",
+      "descrizione": "Sella urbana",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 10,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "REGGISELLA",
+      "descrizione": "Reggisella",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 12,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "MANOPOLE",
+      "descrizione": "Manopola per manubrio (singola)",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 20,
+      "scorta_sicurezza": 10,
+      "regola_lotto": "FOQ",
+      "lotto_foq": 40,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "CERCHIO_700C",
+      "descrizione": "Cerchio 700C adatto a entrambe le ruote",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 20,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "POQ",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "RAGGIO_700C",
+      "descrizione": "Raggio ruota lunghezza standard (verificare compatibilità)",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 1200,
+      "scorta_sicurezza": 100,
+      "regola_lotto": "FOQ",
+      "lotto_foq": 400,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "NIPPLO",
+      "descrizione": "Nipplo per raggio",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 1200,
+      "scorta_sicurezza": 100,
+      "regola_lotto": "POQ",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "PNEU_700C",
+      "descrizione": "Pneumatico 700C urbano",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 30,
+      "scorta_sicurezza": 6,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [
+        {
+          "settimana": 2,
+          "quantita": 20
+        }
+      ]
+    },
+    {
+      "codice": "CAMERA_700C",
+      "descrizione": "Camera d’aria 700C",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 20,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [
+        {
+          "settimana": 3,
+          "quantita": 20
+        }
+      ]
+    },
+    {
+      "codice": "MOZZO_A",
+      "descrizione": "Mozzo ruota anteriore",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 12,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "MOZZO_P",
+      "descrizione": "Mozzo ruota posteriore monovelocità",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 10,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "PIGNONE_L",
+      "descrizione": "Pignone posteriore singola velocità",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 10,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "GUARNITURA",
+      "descrizione": "Guarnitura con corona singola",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 15,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "POQ",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "MOV_CENTRALE",
+      "descrizione": "Movimento centrale",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 12,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "CATENA",
+      "descrizione": "Catena monovelocità",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 14,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "PEDALI_CP",
+      "descrizione": "Coppia di pedali destra/sinistra",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 12,
+      "scorta_sicurezza": 5,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "FRENO_VB",
+      "descrizione": "Corpo freno V-brake (uno per ruota)",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 26,
+      "scorta_sicurezza": 6,
+      "regola_lotto": "FOQ",
+      "lotto_foq": 30,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "LEVA_FRENO",
+      "descrizione": "Leva freno individuale",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 30,
+      "scorta_sicurezza": 6,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "CAVO_FRENO",
+      "descrizione": "Kit cavo e guaina per un freno",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 30,
+      "scorta_sicurezza": 6,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    },
+    {
+      "codice": "PAST_FRENO",
+      "descrizione": "Coppia pattini per un freno V-brake",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 30,
+      "scorta_sicurezza": 6,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": []
+    }
+  ],
+  "distinta_base": [
+    {
+      "padre": "FIN_BICI",
+      "componente": "ASS_STRUTTURA",
+      "quantita": 1
+    },
+    {
+      "padre": "FIN_BICI",
+      "componente": "ASS_RUOTA_A",
+      "quantita": 1
+    },
+    {
+      "padre": "FIN_BICI",
+      "componente": "ASS_RUOTA_P",
+      "quantita": 1
+    },
+    {
+      "padre": "FIN_BICI",
+      "componente": "ASS_TRASM",
+      "quantita": 1
+    },
+    {
+      "padre": "FIN_BICI",
+      "componente": "ASS_FRENI",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_STRUTTURA",
+      "componente": "TELAIO",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_STRUTTURA",
+      "componente": "FORCELLA",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_STRUTTURA",
+      "componente": "MANUBRIO",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_STRUTTURA",
+      "componente": "ATT_MANUBRIO",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_STRUTTURA",
+      "componente": "SELLA",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_STRUTTURA",
+      "componente": "REGGISELLA",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_STRUTTURA",
+      "componente": "MANOPOLE",
+      "quantita": 2
+    },
+    {
+      "padre": "ASS_RUOTA_A",
+      "componente": "CERCHIO_700C",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_RUOTA_A",
+      "componente": "RAGGIO_700C",
+      "quantita": 36
+    },
+    {
+      "padre": "ASS_RUOTA_A",
+      "componente": "NIPPLO",
+      "quantita": 36
+    },
+    {
+      "padre": "ASS_RUOTA_A",
+      "componente": "PNEU_700C",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_RUOTA_A",
+      "componente": "CAMERA_700C",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_RUOTA_A",
+      "componente": "MOZZO_A",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_RUOTA_P",
+      "componente": "CERCHIO_700C",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_RUOTA_P",
+      "componente": "RAGGIO_700C",
+      "quantita": 36
+    },
+    {
+      "padre": "ASS_RUOTA_P",
+      "componente": "NIPPLO",
+      "quantita": 36
+    },
+    {
+      "padre": "ASS_RUOTA_P",
+      "componente": "PNEU_700C",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_RUOTA_P",
+      "componente": "CAMERA_700C",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_RUOTA_P",
+      "componente": "MOZZO_P",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_RUOTA_P",
+      "componente": "PIGNONE_L",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_TRASM",
+      "componente": "GUARNITURA",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_TRASM",
+      "componente": "MOV_CENTRALE",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_TRASM",
+      "componente": "CATENA",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_TRASM",
+      "componente": "PEDALI_CP",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_FRENI",
+      "componente": "FRENO_VB",
+      "quantita": 2
+    },
+    {
+      "padre": "ASS_FRENI",
+      "componente": "LEVA_FRENO",
+      "quantita": 2
+    },
+    {
+      "padre": "ASS_FRENI",
+      "componente": "CAVO_FRENO",
+      "quantita": 2
+    },
+    {
+      "padre": "ASS_FRENI",
+      "componente": "PAST_FRENO",
+      "quantita": 2
+    }
+  ],
+  "assunzioni": [
+    "Progetto dimostrativo: quantità, scorte, lead time e lotti sono dati ipotetici, non un piano industriale.",
+    "Tutti i lead time sono espressi in settimane e compresi tra 1 e 3.",
+    "Pneumatico, camera d’aria, cerchio, raggi e nippli sono codici comuni a entrambe le ruote.",
+    "Ogni ruota usa per ipotesi 36 raggi e 36 nippli; nella produzione reale verificare mozzi, raggi, cerchi e compatibilità delle misure.",
+    "I due arrivi programmati sono relativi a PNEU_700C (settimana 2) e CAMERA_700C (settimana 3).",
+    "Dati iniziali già pronti per il motore MRP: il file non contiene informazioni personali."
+  ]
+}

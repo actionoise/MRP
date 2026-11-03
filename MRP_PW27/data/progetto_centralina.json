@@ -1,0 +1,811 @@
+{
+  "nome_progetto": "Centralina BLE/WIFI",
+  "descrizione": "Prodotto a due PCB, scheda BLE ESP32 e scheda relè impilata.",
+  "prodotto_finito": "FIN001",
+  "orizzonte_settimane": 8,
+  "periodo_poq": 3,
+  "fabbisogni": [
+    30,
+    20,
+    75,
+    65,
+    55,
+    45,
+    35,
+    25
+  ],
+  "articoli": [
+    {
+      "codice": "FIN001",
+      "descrizione": "Centralina BLE ESP32 + scheda relè, programmata e collaudata",
+      "provenienza": "PRODOTTO",
+      "lead_time": 2,
+      "giacenza_iniziale": 130,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "FOQ",
+      "lotto_foq": 140,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "",
+      "codice_produttore": "",
+      "produttore": "Assemblaggio interno",
+      "footprint": "",
+      "sorgente_easyeda": [],
+      "note": "Giacenza e lead time assegnati per il progetto."
+    },
+    {
+      "codice": "ASS_BLE",
+      "descrizione": "Scheda BLE ESP32 assemblata",
+      "provenienza": "PRODOTTO",
+      "lead_time": 1,
+      "giacenza_iniziale": 0,
+      "scorta_sicurezza": 0,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "",
+      "codice_produttore": "",
+      "produttore": "Assemblaggio interno",
+      "footprint": "",
+      "sorgente_easyeda": [],
+      "note": "Giacenza e lead time assegnati per il progetto."
+    },
+    {
+      "codice": "ASS_RELE",
+      "descrizione": "Scheda relè assemblata",
+      "provenienza": "PRODOTTO",
+      "lead_time": 1,
+      "giacenza_iniziale": 0,
+      "scorta_sicurezza": 0,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "",
+      "codice_produttore": "",
+      "produttore": "Assemblaggio interno",
+      "footprint": "",
+      "sorgente_easyeda": [],
+      "note": "Giacenza e lead time assegnati per il progetto."
+    },
+    {
+      "codice": "CMP_C354947",
+      "descrizione": "TSA343G00D-250J2",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 15,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C354947",
+      "codice_produttore": "TSA343G00D-250J2",
+      "produttore": "BRIGHT(博瑞泰)",
+      "footprint": "SW-SMD_L4.0-W2.9-P4.15-EH",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C30926",
+      "descrizione": "100nF",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 30,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "POQ",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C30926",
+      "codice_produttore": "0603B104K500NT",
+      "produttore": "FH(风华)",
+      "footprint": "C0603",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C84419",
+      "descrizione": "22uF",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 3,
+      "giacenza_iniziale": 55,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C84419",
+      "codice_produttore": "GRM188R61A226ME15D",
+      "produttore": "muRata(村田)",
+      "footprint": "C0603",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C8032",
+      "descrizione": "4.7uF",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 80,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C8032",
+      "codice_produttore": "CL10A475KQ8NNNC",
+      "produttore": "SAMSUNG(三星)",
+      "footprint": "C0603",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C383211",
+      "descrizione": "LESD5D5.0CT1G",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 15,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C383211",
+      "codice_produttore": "LESD5D5.0CT1G",
+      "produttore": "LRC(乐山无线电)",
+      "footprint": "SOD-523_L1.2-W0.8-LS1.6-BI",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C124187",
+      "descrizione": "BAT760-7",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 3,
+      "giacenza_iniziale": 30,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C124187",
+      "codice_produttore": "BAT760-7",
+      "produttore": "DIODES(美台)",
+      "footprint": "SOD-323_L1.8-W1.3-LS2.5-RD",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C2894942",
+      "descrizione": "PZ254-1-19-Z-8.5",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 55,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C2894942",
+      "codice_produttore": "PZ254-1-19-Z-8.5",
+      "produttore": "HCTL(华灿天禄)",
+      "footprint": "HDR-TH_19P-P2.54-V-M",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C84267",
+      "descrizione": "FC-D1608UGK-520D10",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 80,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "POQ",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [
+        {
+          "settimana": 2,
+          "quantita": 150
+        }
+      ],
+      "lcsc": "C84267",
+      "codice_produttore": "NCD0603G1",
+      "produttore": "国星光电",
+      "footprint": "LED0603-RD",
+      "sorgente_easyeda": [
+        "BLE",
+        "RELE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C164886",
+      "descrizione": "SS8050-G",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 3,
+      "giacenza_iniziale": 15,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C164886",
+      "codice_produttore": "SS8050-G",
+      "produttore": "CJ(江苏长电/长晶)",
+      "footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C269684",
+      "descrizione": "10kΩ",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 30,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C269684",
+      "codice_produttore": "RMC060310K5%N",
+      "produttore": "Tyohm(幸亚电阻)",
+      "footprint": "R0603",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C137768",
+      "descrizione": "22.1kΩ",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 55,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C137768",
+      "codice_produttore": "RC0603FR-0722K1L",
+      "produttore": "YAGEO(国巨)",
+      "footprint": "R0603",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C103396",
+      "descrizione": "2kΩ",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 3,
+      "giacenza_iniziale": 80,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C103396",
+      "codice_produttore": "RTT03202JTP",
+      "produttore": "RALEC(旺诠)",
+      "footprint": "R0603",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C706176",
+      "descrizione": "47.5kΩ",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 15,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C706176",
+      "codice_produttore": "RT0603FRE0747K5L",
+      "produttore": "YAGEO(国巨)",
+      "footprint": "R0603",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C701342",
+      "descrizione": "ESP32-WROOM-32E(8MB)",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 3,
+      "giacenza_iniziale": 30,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [
+        {
+          "settimana": 3,
+          "quantita": 80
+        }
+      ],
+      "lcsc": "C701342",
+      "codice_produttore": "ESP32-WROOM-32E-N8",
+      "produttore": "ESPRESSIF(乐鑫)",
+      "footprint": "WIFI-SMD_ESP32-WROOM-32E",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C964632",
+      "descrizione": "CP2102N-A02-GQFN28R",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 3,
+      "giacenza_iniziale": 55,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C964632",
+      "codice_produttore": "CP2102N-A02-GQFN28R",
+      "produttore": "SILICON LABS(芯科)",
+      "footprint": "QFN-28_L5.0-W5.0-P0.50-TL-EP3.3",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C347222",
+      "descrizione": "AMS1117-3.3_C347222",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 80,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C347222",
+      "codice_produttore": "AMS1117-3.3",
+      "produttore": "UMW(广东友台半导体)",
+      "footprint": "SOT-223-4_L6.5-W3.5-P2.30-LS7.0-BR",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C393940",
+      "descrizione": "MICRO5.9MMUSB",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 15,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C393940",
+      "codice_produttore": "MICRO5.9mmusb",
+      "produttore": "SHOU HAN(首韩)",
+      "footprint": "MICRO-USB-SMD_5P-P0.65-H-F_MICRO5.9MMUSB",
+      "sorgente_easyeda": [
+        "BLE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_RELE_D1",
+      "descrizione": "D-1N4007",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 15,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "",
+      "codice_produttore": "",
+      "produttore": "",
+      "footprint": "SOD-123_L2.8-W1.8-LS3.7-RD",
+      "sorgente_easyeda": [
+        "RELE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_RELE_R1_R2",
+      "descrizione": "RESISTOR1K",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 55,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "",
+      "codice_produttore": "",
+      "produttore": "",
+      "footprint": "VISH-RES-0603",
+      "sorgente_easyeda": [
+        "RELE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C560345",
+      "descrizione": "22.1kΩ",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 80,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C560345",
+      "codice_produttore": "0105WHF2212TDE",
+      "produttore": "UNI-ROYAL(厚声)",
+      "footprint": "R01005",
+      "sorgente_easyeda": [
+        "RELE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_RELE_RL1",
+      "descrizione": "Omron-G5LE-Relay_SPDT",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 3,
+      "giacenza_iniziale": 15,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "FOQ",
+      "lotto_foq": 100,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "",
+      "codice_produttore": "",
+      "produttore": "",
+      "footprint": "OMRON_G5LE_SPDT_RELAY",
+      "sorgente_easyeda": [
+        "RELE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_RELE_T1",
+      "descrizione": "BC547B-NPN-TO92-EBC",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 30,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "",
+      "codice_produttore": "",
+      "produttore": "",
+      "footprint": "TO92-EBC",
+      "sorgente_easyeda": [
+        "RELE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C385061",
+      "descrizione": "CYPC817",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 55,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C385061",
+      "codice_produttore": "CYPC817B",
+      "produttore": "OCIC(卓睿科)",
+      "footprint": "DIP-4_L6.4-W4.6-P2.54-LS7.6-BL",
+      "sorgente_easyeda": [
+        "RELE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "CMP_C2897382",
+      "descrizione": "PM254-1-19-Z-8.5",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 3,
+      "giacenza_iniziale": 80,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "C2897382",
+      "codice_produttore": "PM254-1-19-Z-8.5",
+      "produttore": "HCTL(华灿天禄)",
+      "footprint": "HDR-TH_19P-P2.54-V-F",
+      "sorgente_easyeda": [
+        "RELE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario. Quantità aggiornata: 2 femmine richieste per i 2 header maschi; il CSV originale ne riporta una."
+    },
+    {
+      "codice": "CMP_RELE_X2",
+      "descrizione": "AKL701_3_15",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 1,
+      "giacenza_iniziale": 15,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "",
+      "codice_produttore": "",
+      "produttore": "",
+      "footprint": "AKL701_3_15",
+      "sorgente_easyeda": [
+        "RELE"
+      ],
+      "note": "Dati magazzino, politica e LT ipotetici per esercizio universitario."
+    },
+    {
+      "codice": "PCB_BLE",
+      "descrizione": "PCB nudo scheda BLE",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 20,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "",
+      "codice_produttore": "",
+      "produttore": "",
+      "footprint": "PCB personalizzato",
+      "sorgente_easyeda": [
+        "AGGIUNTA_BOM_MRP"
+      ],
+      "note": "PCB nudo aggiunto manualmente: non compare come normale riga nella BOM componenti di EasyEDA."
+    },
+    {
+      "codice": "PCB_RELE",
+      "descrizione": "PCB nudo scheda relè",
+      "provenienza": "ACQUISTATO",
+      "lead_time": 2,
+      "giacenza_iniziale": 20,
+      "scorta_sicurezza": 35,
+      "regola_lotto": "L4L",
+      "lotto_foq": null,
+      "periodo_poq": 3,
+      "arrivi_programmati": [],
+      "lcsc": "",
+      "codice_produttore": "",
+      "produttore": "",
+      "footprint": "PCB personalizzato",
+      "sorgente_easyeda": [
+        "AGGIUNTA_BOM_MRP"
+      ],
+      "note": "PCB nudo aggiunto manualmente: non compare come normale riga nella BOM componenti di EasyEDA."
+    }
+  ],
+  "distinta_base": [
+    {
+      "padre": "FIN001",
+      "componente": "ASS_BLE",
+      "quantita": 1
+    },
+    {
+      "padre": "FIN001",
+      "componente": "ASS_RELE",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C354947",
+      "quantita": 2,
+      "riferimenti_pcb": "BOOT,EN"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C30926",
+      "quantita": 3,
+      "riferimenti_pcb": "C2,C3,C6"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C84419",
+      "quantita": 3,
+      "riferimenti_pcb": "C4,C8,C9"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C8032",
+      "quantita": 1,
+      "riferimenti_pcb": "C7"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C383211",
+      "quantita": 3,
+      "riferimenti_pcb": "D1,D2,D3"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C124187",
+      "quantita": 1,
+      "riferimenti_pcb": "D4"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C2894942",
+      "quantita": 2,
+      "riferimenti_pcb": "H1,H2"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C84267",
+      "quantita": 1,
+      "riferimenti_pcb": "LED1"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C164886",
+      "quantita": 2,
+      "riferimenti_pcb": "Q1,Q2"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C269684",
+      "quantita": 3,
+      "riferimenti_pcb": "R1,R4,R5"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C137768",
+      "quantita": 2,
+      "riferimenti_pcb": "R2,R8"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C103396",
+      "quantita": 1,
+      "riferimenti_pcb": "R6"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C706176",
+      "quantita": 1,
+      "riferimenti_pcb": "R7"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C701342",
+      "quantita": 1,
+      "riferimenti_pcb": "U1"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C964632",
+      "quantita": 1,
+      "riferimenti_pcb": "U3"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C347222",
+      "quantita": 1,
+      "riferimenti_pcb": "U4"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "CMP_C393940",
+      "quantita": 1,
+      "riferimenti_pcb": "USB1"
+    },
+    {
+      "padre": "ASS_RELE",
+      "componente": "CMP_RELE_D1",
+      "quantita": 1,
+      "riferimenti_pcb": "D1"
+    },
+    {
+      "padre": "ASS_RELE",
+      "componente": "CMP_C84267",
+      "quantita": 1,
+      "riferimenti_pcb": "LED1"
+    },
+    {
+      "padre": "ASS_RELE",
+      "componente": "CMP_RELE_R1_R2",
+      "quantita": 2,
+      "riferimenti_pcb": "R1,R2"
+    },
+    {
+      "padre": "ASS_RELE",
+      "componente": "CMP_C560345",
+      "quantita": 1,
+      "riferimenti_pcb": "R3"
+    },
+    {
+      "padre": "ASS_RELE",
+      "componente": "CMP_RELE_RL1",
+      "quantita": 1,
+      "riferimenti_pcb": "RL1"
+    },
+    {
+      "padre": "ASS_RELE",
+      "componente": "CMP_RELE_T1",
+      "quantita": 1,
+      "riferimenti_pcb": "T1"
+    },
+    {
+      "padre": "ASS_RELE",
+      "componente": "CMP_C385061",
+      "quantita": 1,
+      "riferimenti_pcb": "U2"
+    },
+    {
+      "padre": "ASS_RELE",
+      "componente": "CMP_C2897382",
+      "quantita": 2,
+      "riferimenti_pcb": "U3"
+    },
+    {
+      "padre": "ASS_RELE",
+      "componente": "CMP_RELE_X2",
+      "quantita": 1,
+      "riferimenti_pcb": "X2"
+    },
+    {
+      "padre": "ASS_BLE",
+      "componente": "PCB_BLE",
+      "quantita": 1
+    },
+    {
+      "padre": "ASS_RELE",
+      "componente": "PCB_RELE",
+      "quantita": 1
+    }
+  ],
+  "assunzioni": [
+    "Le due BOM sono esportazioni originali EasyEDA; le giacenze, i lead time e le politiche diversi da quelli vincolati sono ipotesi da documentare.",
+    "In accordo al montaggio previsto, il connettore femmina della scheda relè è portato da 1 a 2 unità, per accoppiare i due maschi presenti sulla scheda BLE: verificare e aggiornare EasyEDA.",
+    "Si aggiungono manualmente i due PCB nudi, assenti dai CSV di componenti.",
+    "Le resistenze da 22,1 kΩ sono articoli diversi: C137768 (BLE 0603) e C560345 (relè 01005).",
+    "Il solo articolo condiviso tra i due padri è il LED C84267.",
+    "Il LED nelle immagini illustrative è rosso, ma colore e distinta commerciale C84267 vanno verificati prima della realizzazione fisica.",
+    "I dati sono per una simulazione didattica e non costituiscono approvazione del progetto elettronico."
+  ]
+}
