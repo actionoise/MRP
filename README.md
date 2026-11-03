@@ -2,7 +2,16 @@
 
 Applicazione Python per la **pianificazione dei fabbisogni di materiali (MRP)** su distinta base multilivello, con dashboard **Streamlit**, tabelle **pandas** e grafici interattivi **Plotly**.
 
-Il progetto include un esempio basato su una **centralina BLE/Wi-Fi ESP32 con scheda relè**.
+Il progetto carica di default un esempio basato su una centralina BLE/Wi-Fi ESP32 con scheda relè.
+Per testare l’applicativo con un prodotto diverso, è possibile utilizzare il pulsante Upload e 
+caricare il file JSON alternativo incluso nella cartella data.
+L’applicativo mantiene separati i dati del prodotto dal motore di calcolo MRP: legge dal file 
+JSON gli articoli, la distinta base, le giacenze e i parametri di pianificazione, quindi esegue 
+i calcoli e visualizza i risultati. È quindi possibile analizzare prodotti diversi senza modificare
+il codice, purché i file JSON rispettino la struttura prevista.
+Il software opera come strumento autonomo di simulazione e pianificazione: non è collegato a macchinari,
+magazzini o sistemi gestionali e non acquisisce dati in tempo reale.
+
 
 ## Gestione dei dati
 
