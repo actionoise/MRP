@@ -21,7 +21,3 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-
-## 8. Per l'elaborato
-
-Inserisci le figure della BOM semplificata e della centralina, poi i calcoli universitari **nel testo della relazione**. Usa `GUIDA_JSON.md` per mostrare piccoli estratti del JSON, spiegando che tutti gli altri componenti sono presenti nel file completo. Presenta un esempio numerico del record FIN001 e le tabelle di confronto BASE/TUTTI_L4L/TUTTI_POQ, evidenziando i limiti degli ordini ante-S1.
