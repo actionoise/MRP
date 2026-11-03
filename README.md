@@ -4,7 +4,7 @@ Applicazione Python per la **pianificazione dei fabbisogni di materiali (MRP)** 
 
 Il progetto carica di default un esempio basato su una centralina BLE/Wi-Fi ESP32 con scheda relè.
 Per testare l’applicativo con un prodotto diverso, è possibile utilizzare il pulsante Upload e 
-caricare il file JSON alternativo incluso nella cartella data.
+caricare il file JSON alternativo (progetto bicicletta) incluso nella cartella data.
 L’applicativo mantiene separati i dati del prodotto dal motore di calcolo MRP: legge dal file 
 JSON gli articoli, la distinta base, le giacenze e i parametri di pianificazione, quindi esegue 
 i calcoli e visualizza i risultati. È quindi possibile analizzare prodotti diversi senza modificare
