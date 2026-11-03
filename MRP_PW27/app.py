@@ -1,7 +1,7 @@
 """Dashboard Streamlit MRP multilivello · PW 27 · dati esterni in JSON.
 
 Avvio: python -m streamlit run app.py
-La matricola non viene letta né memorizzata dall'applicazione.
+
 """
 
 import json
